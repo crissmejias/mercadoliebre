@@ -20,7 +20,7 @@ div.top-header {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20%;
+  justify-content: space-between;
 }
 
 header {
@@ -28,10 +28,13 @@ header {
 }
 
 header div.logo {
-  width: 50%;
+  width: 30%;
   padding: 10px;
 }
-
+header div.logo img {
+  height: 90%;
+  width: 100%;
+}
 header nav {
   display: none;
 }
@@ -45,7 +48,7 @@ header ul li a {
   color: #000;
 }
 header .form {
-  width: 30%;
+  width: 40%;
   align-self: center;
   justify-self: flex-end;
 }
@@ -60,8 +63,7 @@ header .form .submit {
   background-color: #fff;
   border: 1px solid #000;
   color: #666;
-  width: 10%;
-  width: auto;
+  width: 24px;
 }
 
 header div.top-header p {
