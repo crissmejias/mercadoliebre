@@ -20,6 +20,7 @@ div.top-header {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
+  gap: 20%;
 }
 
 header {
@@ -32,7 +33,7 @@ header div.logo {
 }
 
 header nav {
-  font-size: 12px;
+  display: none;
 }
 
 header ul li {
@@ -44,7 +45,9 @@ header ul li a {
   color: #000;
 }
 header .form {
-  width: 50%;
+  width: 30%;
+  align-self: center;
+  justify-self: flex-end;
 }
 header .form .input {
   background-color: #fff;
@@ -58,6 +61,7 @@ header .form .submit {
   border: 1px solid #000;
   color: #666;
   width: 10%;
+  width: auto;
 }
 
 header div.top-header p {
@@ -207,6 +211,22 @@ footer div {
   background: white;
 }
 @media (min-width: 361px) {
+  header nav {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+  }
+
+  div.burger-menu {
+    display: none;
+  }
   main section .products {
     display: flex;
     flex-wrap: wrap;
