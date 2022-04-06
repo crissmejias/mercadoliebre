@@ -1,0 +1,262 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+div.top-header {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  width: 50%;
+  padding: 10px;
+}
+
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header .form {
+  width: 50%;
+}
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.price {
+  font-size: 18px;
+  flex: 30%;
+}
+.discount {
+  flex: 70%;
+}
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.description {
+  color: #666;
+}
+
+.description {
+  visibility: hidden;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+  transition: box-shadow 1000ms;
+}
+main section article:hover {
+  box-shadow: 0px 0px 5px 8px #c5c5c5;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+}
+main section article .description {
+  transition: visibility 5000ms;
+}
+main section article:hover > .main-article .description {
+  visibility: visible;
+}
+main section article i {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 500ms;
+}
+main section article:hover > .main-article i {
+  transform: rotate(-90deg);
+}
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: relative;
+  flex-wrap: wrap;
+}
+footer {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+footer section {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+footer section div i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+  transition: color 1000ms;
+}
+footer section div i:hover {
+  color: #eac926;
+}
+footer section p {
+  font-size: 12px;
+  color: rgb(75, 72, 72);
+}
+.pagar-container .pagar-title,
+.envio-container .envio-title,
+.seguridad-container .seguridad-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(75, 72, 72);
+}
+footer div {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.copy {
+  padding-bottom: 12px;
+  text-align: center;
+  background: white;
+}
+@media (min-width: 361px) {
+  main section .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main section article {
+    width: 45%;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+.intereses-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.login-title {
+  text-align: center;
+  margin-top: 12px;
+}
+input {
+  width: 220px;
+  border: none;
+  height: 25px;
+  border-radius: 8px;
+}
+.primary-button {
+  background-color: #0044aa;
+  color: white;
+  width: 220px;
+  border: none;
+  border-radius: 8px;
+  height: 25px;
+  transition: background 1s;
+}
+.primary-button:hover {
+  background: #39b54a;
+}
+@media (min-width: 769px) {
+  main section article {
+    width: 22%;
+  }
+  footer {
+    flex-direction: row;
+  }
+}
